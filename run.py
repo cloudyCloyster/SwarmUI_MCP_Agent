@@ -32,7 +32,7 @@ def get_image_data_uri(img_url: str, api_base_url: str) -> str:
     if img_url.startswith("data:"):
         return img_url  # Already a data URI
     # Otherwise, fetch the image from the API
-    # Ensure the URL is absolute
+    # #Ensure the URL is absolute
     if not img_url.startswith("http"):
         img_url = api_base_url.rstrip("/") + "/" + img_url.lstrip("/")
     resp = requests.get(img_url)
