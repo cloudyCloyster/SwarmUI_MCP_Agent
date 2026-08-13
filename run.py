@@ -3,7 +3,7 @@ from typing import TypedDict, Annotated, Literal
 import operator
 from langchain_ollama import OllamaLLM
 from langchain_core.messages import HumanMessage, AIMessage, BaseMessage, ToolMessage
-from langchain.output_parsers import CommaSeparatedListOutputParser
+from langchain_core.output_parsers import CommaSeparatedListOutputParser
 from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
 from tools import generate_image # Import the generate_image tool from tools.py
